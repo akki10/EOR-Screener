@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="EOR.exe" version="1.0.0.1" publicKeyToken="ab2e8992da84bb0a" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="EOR" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="EOR.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.AcroPDFLib.dll" size="9216">
+      <assemblyIdentity name="AxInterop.AcroPDFLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>QqY2l5fpnbYObW0hkhjXutYX1BE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.ShockwaveFlashObjects.dll" size="17920">
+      <assemblyIdentity name="AxInterop.ShockwaveFlashObjects" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>PZm5A+O6NDvas4+Uqr+AVc0g1tQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.WMPLib.dll" size="53760">
+      <assemblyIdentity name="AxInterop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>0w69kpcn+azPedTd/o9J0zFzmKs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EOR.exe" size="89600">
+      <assemblyIdentity name="EOR" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>LjXO9hR7vU7xU35L28uZzVE4294=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.AcroPDFLib.dll" size="10240">
+      <assemblyIdentity name="Interop.AcroPDFLib" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>bvg0JoExxXt8151opGQmVgb3beA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.ShockwaveFlashObjects.dll" size="22528">
+      <assemblyIdentity name="Interop.ShockwaveFlashObjects" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>0nDTW1mI2onRIByCmfEKVNMpz98=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.WMPLib.dll" size="331264">
+      <assemblyIdentity name="Interop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ZxpqAKgC217dTCZFNzNHJzCP6mM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=UPESDDN\500016886" issuerKeyHash="6592630211548436cbccb626fb6c700e9a103ae0" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>mJP+tbz5axv7vIXlEb7OnU1GIFY=</DigestValue></Reference></SignedInfo><SignatureValue>hVLVPe96P2GFofJLTqfgvdxoyoG20qHor12X2vFLpN7Cc0U3bB0C1qiPFUVJU/DV9N+tYnkn5Vxoc7OidG3Fg+a/EX87XKJST0Ycn+8pTmjXpHITTp0ZsVEwiAAauxZIsJC88lp28ujZy2ZTbpPw0xe6TLmwZS6RI5SiTC/HZdE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>086DJiAGU9o/TFtEKBCF6O2/fUHFzzDV75X0U3/a1Qb0v4duZtgxMGEBCH455HufwfcYhIPvZNfjmEUiK0Rv6Q1WcLnwvNXt5rqZ4FAH/sqUcfRjvBLdyA4TTw52atYQYx5XbY1Ao5ptVPQGA9uBwVFrQliiGfjtu2684rfZbjM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="5620464d9dcebe11e585bcfb1b6bf9bcb5fe9398" Description="" Url=""><as:assemblyIdentity name="EOR.exe" version="1.0.0.1" publicKeyToken="ab2e8992da84bb0a" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=UPESDDN\500016886</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>omo0vAwxPGohTYO+Qv+I9eDe5KQ=</DigestValue></Reference></SignedInfo><SignatureValue>0h2y+ED8FVX27tUuiFuV9PakpJ8fMRPsMTocGYhxeiMVEcOgcI4V0J0pBfi/2KW+sLpuyWA0cU3Ym14PRV0ZbNe6PxNN9hHk7G3NUZO+JYHvRV6oovp9rWDvccn1oZv4OHbI3bFJRkXh/RO7JC3MusKcO7fKqbGfEd+ND9AeTJ0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>086DJiAGU9o/TFtEKBCF6O2/fUHFzzDV75X0U3/a1Qb0v4duZtgxMGEBCH455HufwfcYhIPvZNfjmEUiK0Rv6Q1WcLnwvNXt5rqZ4FAH/sqUcfRjvBLdyA4TTw52atYQYx5XbY1Ao5ptVPQGA9uBwVFrQliiGfjtu2684rfZbjM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB3TCCAUagAwIBAgIQEkl8swbor4FGqfqUHhwgGDANBgkqhkiG9w0BAQUFADAtMSswKQYDVQQDHiIAVQBQAEUAUwBEAEQATgBcADUAMAAwADAAMQA2ADgAOAA2MB4XDTEzMDczMTA3MjQyMloXDTE0MDczMTEzMjQyMlowLTErMCkGA1UEAx4iAFUAUABFAFMARABEAE4AXAA1ADAAMAAwADEANgA4ADgANjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA086DJiAGU9o/TFtEKBCF6O2/fUHFzzDV75X0U3/a1Qb0v4duZtgxMGEBCH455HufwfcYhIPvZNfjmEUiK0Rv6Q1WcLnwvNXt5rqZ4FAH/sqUcfRjvBLdyA4TTw52atYQYx5XbY1Ao5ptVPQGA9uBwVFrQliiGfjtu2684rfZbjMCAwEAATANBgkqhkiG9w0BAQUFAAOBgQCHLQ2kmMxO7xcmuzV487r1RIDTiRVkTnrIUo36qWFbfpXgy1lAAjQdGX4uRgwKZG6cW4CsRurbzygnKMdkDxCadIyvgV1i7Zme8G9l4ymn/Ea0peBs0vFHXcHYbjS0m//mvhaDLr6w5eOD3QTjhg9MVHD4UXc3u+A4dVYVpQx4eA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
